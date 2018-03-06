@@ -1,0 +1,27 @@
+XBRL
+
+Add allocation features to Rebalance Script
+EPI
+
+Create Automation Index
+ESG Factors Paper
+Carats library
+
+BQL Documentation
+
+Version Control options
+Data Storage Options
+
+Sphinx - Python
+PortMGMT - Cpp/Python
+Machine Learning - DS Workflow
+Descriptive Stats - DS Workflow
+Cookie Cutter - Data Science - Python/R
+TA-Lib - Cpp
+Pyfolio/Zipline - Python
+QuantLib - Cpp/Python
+Performance Analytics - R Package
+JupyterLab
+
+make Rmd YAML Template
+use R DS template

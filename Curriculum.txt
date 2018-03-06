@@ -1,0 +1,69 @@
+Books
+
+Econometrics
+	
+	(Maybe) Schaum's Outline of Probability and Statistics, 4th Edition by Spiegal
+	Schaum's Outline of Statistics and Econometrics
+	Introductory Econometrics for Finance / (Maybe) Econometric Analysis - Greene
+	Statistics and Data Analysis for Financial Engineering by Ruppert
+	Time Series Analysis by Hamilton / Analysis of Financial Time Series by Tsay
+	
+Computer Science
+	
+	General:
+		Design Patterns: Elements of Reusable Object-Oriented Software
+		Pragmatic Programmer
+		Refactoring: Improving the Design of Existing Code
+		Advanced Programming in Unix Environment
+		
+	
+	R
+		*R for DataScience
+		Advanced R
+		R Packages
+		
+	C++
+		*Accelerrated C++
+		Effective C++
+		
+	
+	Python
+		*Learn Python the Hard Way
+		*Learning Python
+		*Python for Data Analysis
+		*Python for Finance
+		*Natural Language Processing with Python
+		Hands-On Machine Learning
+		Effective Python
+	
+Math
+
+	Numerical Methods in Finance
+	Statistics and Data Analysis for Financial Engineering
+	Linear Algebra Primer for Financial Engineering
+	
+	
+Financial Analysis
+	
+	Fundamental
+		The Intelligent Investor - Graham
+		Options, Futures, and Other Derivatives
+		Security Analysis - Graham
+	
+	Quantitative
+		*Primer for the Mathematics of Financial Engineering
+		+Active Portfolio Management
+		Quantitative Equity Portfolio Management: Modern Techniques and Applications
+		The Complete Guide to Capital Markets for Quantitative Professionals
+		Quantitative Value
+		Quantitative Momentum
+	
+	Other
+		*Against the Gods
+		*Financial Engineering: The Evolution of a Profession
+		Adaptive Markets: Financial Evolution at the Speed of Thought
+		
+		
+Papers
+
+	
