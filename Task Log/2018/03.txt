@@ -4,3 +4,16 @@
 	Finished Hands-on ML: Chap 2
 	XBRL API Beta
 	Economic Indicator Framework - Data Sources
+	Market Stress Indicators
+	
+3/7/2018
+
+	Meeting & Notes
+	Economic Indicator Framework
+	Effective C++: Lesson 35
+	Data Science Workflow Outline
+	Schaum's Econometrics
+	Intelligent Investor
+	
+3/8/2018
+	
