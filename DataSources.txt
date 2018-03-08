@@ -1,0 +1,91 @@
+Economic Indicator Framework Data Aggregation
+	
+	Objective:
+		
+		Organize, categorize, and provide standard metadata for current and potential data sources in the Economic Indicator Framework.
+	
+	Motivation:
+		
+		Easier lookup and mamangement of data sources for use in Economic Indicator Framework.
+		This will allow for automation and standardization of the indicator creation and analysis.
+		
+		Proposed Metadata to Include:
+			
+			Name - string - whatever the provider calls the data series
+			Source - string - where the data is the data being created
+			Provider - string - how are we accessing the data e.g. Factset, Bloomberg, NYSE, Federal Reserve website - this could be the same as the source
+			Date Range - (YYYYMMDD) - beginning and end dates of data - note that this would have to be continuously updated as more data comes out
+			Description - string - Short description of data series - probably from the provider
+		
+		Other useful fields, but maybe not worth keeping:
+			
+			Format - string - file format of the data e.g. csv, xml, xlsx, json
+			Datatype - string - float, int, categorical, percent, index, etc. - this might be overkill, and it would be apparent once you get the data anyways
+			Market Segment - string - Fixed Income, Equity, Gov, Derivative, Money Market, etc. - this should be from some standard
+			Sector - numeric - GICS Sector
+			Industry - numeric - GICS Industry
+			country - string - ISO country code
+			Highest Available Frequencies - Use pandas frequency aliases - https://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases
+			Aggregate - bool - if this is an aggregated value
+			Prepared - bool - if the data is already prepared/adjusted by the provider
+			Prep_Notes - string - notes on how the data is prepared or description of what the raw data was
+			Category - string - Economic, Valuation, Liq & Sentiment, etc.
+			
+	Implementation:
+	
+		Probably an excel (csv) file for now, but should probably be a DB if it grows beyond a certain size.
+		We could incorporate it into some larger framework later on.
+		
+		Two Tables - Dataset and Combination
+		Dataset:
+			Dataset Metadata
+			Schema:
+				Name
+				Source
+				Provider
+				DateRange
+				Frequency
+				Description
+				etc.
+		
+		Combination:
+			Combines Datasets. Many-to-Many table. This is where you would lookup in what combination the datasets are used.
+			Schema:
+				Dataset.Name1
+				Dataset.Name2
+				common_date_range
+				greatest_common_frequency
+				
+				
+	Notes on Implementation:	
+		
+		Two ways to handle the (underlying) time series data associated with the Dataset table:
+		
+			Internally stored and managed:
+				Download and save all the data to a local server. Update data as it comes in.
+				
+				Benefits:
+					Control over formatting
+					Centrally located
+					Uniformity of access point
+					Probably lower cost
+				Problems:
+					Data liscenses might not allow us to save their data for internal storage and distribution, although a lot of the data is publicly available.
+					Might require higher technical knowledge - SQL
+					Non-trivial amount data - requires DB server or other storage solution
+					DB mamangement - we would need to handle updating the data ourselves
+			
+			External Data Sources:
+				Create scripts for accessing the data and temporarily saving the data for analysis.
+				This is pretty much what we do now, and what we should continue to do for the time being.
+				
+				Benefits:
+					No long-term storage necessary
+					Lower Technical threshold for end user
+					They already standardize the Datetime intervals (mostly) - probably the most difficult part
+					
+				Problems:
+					Many different data formats
+					Many APIs
+					Larger Temporary data storage needed - you might need to have multiple GBs of data locally stored for each analysis
+					No control over data - data source discrepencies and revisions in historical data may not be apparent

@@ -7,10 +7,10 @@ Create Automation Index
 ESG Factors Paper
 Carats library
 
-BQL Documentation
+BQNT & BQL Documentation
 
-Version Control options
-Data Storage Options
+Version Control options - Git/GitHub
+Data Storage Options - Git LFS
 
 Sphinx - Python
 PortMGMT - Cpp/Python
@@ -25,3 +25,10 @@ JupyterLab
 
 make Rmd YAML Template
 use R DS template
+
+Market Stress Indicators
+Standard Descriptive Statistics and Visualizations
+
+Go through Data sources for start and end date info
+
+py2exe - make standalone python executable for Windows without need for python installation - I think Web app is better - centrally located and controlled 

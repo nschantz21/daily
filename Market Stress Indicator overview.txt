@@ -1,0 +1,23 @@
+Market Stress Indicators
+	
+	I don't know how much we should focus on technical analysis theory (or lack thereof)
+	
+	technical pattern recognition using nonparametric kernel regression
+	Random Walk Indicator - a technical indicator that attempts to determine if a stock’s price movement is random in nature or a result of a statistically significant trend
+	
+	Visualizations
+		It's pretty much all based on visual pattern recognition, so the charts we pick are kinda important
+		Scientific approach is based on velocity and acceleration and Froude number
+		
+		
+	Measuring Financial Market Stress - Kliesen, Smith
+		
+		St. Louis Fed’s Financial Stress Index (STLFSI) is constructed using principal components analysis (PCA), which is similar to the construction of the Kansas City Fed’s FSI (KCFSI).
+		
+		
+		default risk - difference between yields on a risky asset and a risk-free asset
+		liquidity risk - inability to secure funding to finance short-term liabilities
+		The STLFSI and the KCFSI can be thought of as coincident indexes rather than as leading indexes—that is, they are designed to measure developments as they occur. However, they have leading indicator properties because rising levels of financial stress, as recently seen, can portend economic turmoil and disruption.
+		the STLFSI seemed to accurately capture the subsequent turmoil and financial stress.
+		
+	
