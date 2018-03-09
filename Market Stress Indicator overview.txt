@@ -5,12 +5,12 @@ Market Stress Indicators
 	technical pattern recognition using nonparametric kernel regression
 	Random Walk Indicator - a technical indicator that attempts to determine if a stock’s price movement is random in nature or a result of a statistically significant trend
 	
-	Visualizations
-		It's pretty much all based on visual pattern recognition, so the charts we pick are kinda important
-		Scientific approach is based on velocity and acceleration and Froude number
+Visualizations
+	It's pretty much all based on visual pattern recognition, so the charts we pick are kinda important
+	Scientific approach is based on velocity and acceleration and Froude number
 		
 		
-	Measuring Financial Market Stress - Kliesen, Smith
+Measuring Financial Market Stress - Kliesen, Smith
 		
 		St. Louis Fed’s Financial Stress Index (STLFSI) is constructed using principal components analysis (PCA), which is similar to the construction of the Kansas City Fed’s FSI (KCFSI).
 		
@@ -18,6 +18,55 @@ Market Stress Indicators
 		default risk - difference between yields on a risky asset and a risk-free asset
 		liquidity risk - inability to secure funding to finance short-term liabilities
 		The STLFSI and the KCFSI can be thought of as coincident indexes rather than as leading indexes—that is, they are designed to measure developments as they occur. However, they have leading indicator properties because rising levels of financial stress, as recently seen, can portend economic turmoil and disruption.
-		the STLFSI seemed to accurately capture the subsequent turmoil and financial stress.
+		the STLFSI seemed to accurately capture the subsequent turmoil and financial stress - macro history look back indicator
 		
+		Appendix - it's pretty much Fama-Macbeth two part regression
+		
+			Data is weekly frequency over a sixteen year window
+			
+			variables are standardized
+			Principal Component Analysis is used to calculate the coefficients of the variables in th index
+			Scale coefficients so SD of index is 1
+			the observation of the FSI for time t is the sum of each series multiplied by its respective adjusted coefficient
+			
+			
+			FSI output is the percent of the total variation in the 18 variables over the sample period that is explained by the index
+				FSI is 1 - (Total Sum of Squares / Sum of Square Errors)
+				
+			note: I don't think they're adjusting for heteroscedasticity. Maybe use Newey-West estimator
+		
+Financial Stress - Hakkio, Keeton - Reserve Bank of Kansas City
 	
+	Coincident Index, but also provides valuable info about future economic growth
+	
+	Key Features of Financial Stress
+		Increased uncertainty about fundamental value of assets 
+			Manifestation: 
+				greater volatility in the market prices of assets
+			Knightian uncertainty
+		Increased uncertainty about behavior of other investors
+			Manifestation: 
+				greater volatility in the market prices of assets
+			
+		Increased asymmetry of information - increased asymmetry of information between lenders and borrowers or buyers and sellers of financial assets
+			Manifestation:
+				the variation in the true quality of borrowers or financial assets might increase
+				lenders losing confidence in the accuracy of their information about borrowers
+		
+		Decreased willingness to hold risky assets (flight to quality)
+			Manifestation:
+				widening spread between the rates of return on the two types of assets and increase the cost of borrowing for relatively risky borrowers
+				appetite for risk falls
+		Decreased willingness to hold illiquid assets (flight to liquidity) - final sign of financial stress is sharp decline in willingness to hold illiquid assets
+			A flight to liquidity can occur for two reasons:
+				increase in the demand for liquidity to protect against unexpected cash needs
+				decrease in the perceived liquidity of some assets
+			
+			Need for liquidity - increased volatility in asset prices triggers margins and 
+			Reduced Perceived liquidity - Market values of some assets falling below their fundamental, hold-to-maturity values. Investors will view such assets as illiquid because they cannot be sold to raise cash without taking a substantial loss
+		
+			Manifestation:
+				Secondary Market for Asset is thin - selling a substantial amount of the asset has large affect on the price
+				widening spread between the rates of return on the two types of assets and increase the cost of borrowing for those firms that issue illiquid securities
+			
+			

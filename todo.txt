@@ -1,34 +1,38 @@
-XBRL
+Tech to learn
+	Sphinx - Python
+	TA-Lib - C++
+	Pyfolio/Zipline - Python
+	QuantLib - Cpp/Python
+	Performance Analytics - R Package
+	JupyterLab
+	BQNT & BQL Documentation
+	Carats library
+	XBRL API
+	py2exe - make standalone python executable for Windows without need for python installation, although I think Web app is better - centrally located and controlled, single access point
 
-Add allocation features to Rebalance Script
-EPI
+Workflow Design
+	Go through Data sources for start and end date info
+	Standard Descriptive Statistics and Visualizations
+	Design workflow around JupyterLab
+		CSS template, Markdown, Latex stuff... idk
+	make Rmd YAML Template
+	use R DS template
+	Version Control options - Git/GitHub
+	Data Storage Options - Git LFS
+	Use bibtex for LaTex citations
+	Xeus - C++ kernel for JupyterLab
+	JupyterHub
+	JupyterLab Extensions
+	Remember the webapp is the Production step
 
-Create Automation Index
-ESG Factors Paper
-Carats library
-
-BQNT & BQL Documentation
-
-Version Control options - Git/GitHub
-Data Storage Options - Git LFS
-
-Sphinx - Python
-PortMGMT - Cpp/Python
-Machine Learning - DS Workflow
-Descriptive Stats - DS Workflow
-Cookie Cutter - Data Science - Python/R
-TA-Lib - Cpp
-Pyfolio/Zipline - Python
-QuantLib - Cpp/Python
-Performance Analytics - R Package
-JupyterLab
-
-make Rmd YAML Template
-use R DS template
-
+Portfolio Management
+	Drift function
+	Remake rebalance function in python
+	Add allocation features to rebalance Script	
+	Look up how Django apps share a backend - can economic data be used in Portfolio Mgmt. can they share a db
+	
+	
 Market Stress Indicators
-Standard Descriptive Statistics and Visualizations
-
-Go through Data sources for start and end date info
-
-py2exe - make standalone python executable for Windows without need for python installation - I think Web app is better - centrally located and controlled 
+	St Louis Paper
+	Kansas City Paper
+	

@@ -18,4 +18,12 @@
 3/8/2018
 	
 	Economic Indicator Framework - Descriptive Stats for Data Exploration
-	Notes
+	Notes - finished
+	Intelligent Investor
+
+3/9/2018
+
+	Economic Indicator Framework - Data Sources
+	Market Stress Indicator
+	JupyterLab Documentation
+	
