@@ -1,4 +1,5 @@
 Tech to learn
+	Python Bloomberg API
 	Sphinx - Python
 	TA-Lib - C++
 	Pyfolio/Zipline - Python
@@ -33,6 +34,5 @@ Portfolio Management
 	
 	
 Market Stress Indicators
-	St Louis Paper
-	Kansas City Paper
+	Kansas City Paper - ask if I should dive into this deeper
 	

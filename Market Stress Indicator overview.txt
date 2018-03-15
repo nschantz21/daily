@@ -44,6 +44,7 @@ Financial Stress - Hakkio, Keeton - Reserve Bank of Kansas City
 			Manifestation: 
 				greater volatility in the market prices of assets
 			Knightian uncertainty
+			
 		Increased uncertainty about behavior of other investors
 			Manifestation: 
 				greater volatility in the market prices of assets
@@ -57,6 +58,7 @@ Financial Stress - Hakkio, Keeton - Reserve Bank of Kansas City
 			Manifestation:
 				widening spread between the rates of return on the two types of assets and increase the cost of borrowing for relatively risky borrowers
 				appetite for risk falls
+				
 		Decreased willingness to hold illiquid assets (flight to liquidity) - final sign of financial stress is sharp decline in willingness to hold illiquid assets
 			A flight to liquidity can occur for two reasons:
 				increase in the demand for liquidity to protect against unexpected cash needs
@@ -68,5 +70,8 @@ Financial Stress - Hakkio, Keeton - Reserve Bank of Kansas City
 			Manifestation:
 				Secondary Market for Asset is thin - selling a substantial amount of the asset has large affect on the price
 				widening spread between the rates of return on the two types of assets and increase the cost of borrowing for those firms that issue illiquid securities
-			
-			
+	
+	
+	Conclusion:
+		It's ok as a leasding indicator, I don't know how well it will work on a smaller time interval. Might want to use IMF for cross country comparisons, but that's really slow too. The IMF one also is kinda new, but they give a lot of info on it as well as just the general construction of Financial Stress Indicators.
+		

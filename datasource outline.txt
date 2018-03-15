@@ -2,7 +2,7 @@ DataSources
 	Dates
 		FactSet
 			start
-				I can't find anything for this, but I think you can just call some really early historical date and set the format to not backfill
+				I can't find anything for this, but I think you can just call some really early historical date and set the format to not backfill - set default as NA
 				
 			end
 				LAST_DATE_1 - seems like it's available for everything

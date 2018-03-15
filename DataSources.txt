@@ -57,7 +57,7 @@ Economic Indicator Framework Data Aggregation
 				greatest_common_frequency
 				
 				
-	Notes on Implementation:	
+	Notes on Implementation:
 		
 		Two ways to handle the (underlying) time series data associated with the Dataset table:
 		
