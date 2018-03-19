@@ -49,3 +49,9 @@
 	Markdown
 	git
 	blpapi
+	
+3/18/2018
+	
+	Effective C++
+	Active Portfolio Management
+
