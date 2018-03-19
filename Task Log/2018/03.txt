@@ -57,7 +57,7 @@
 	python blpapi/tia
 	Econometrics
 	
-		
+	
 =======
 	
 3/18/2018
