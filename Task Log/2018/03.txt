@@ -50,19 +50,28 @@
 	Markdown
 	git
 	blpapi
-<<<<<<< HEAD
 
 3/16/2018
 
 	python blpapi/tia
 	Econometrics
-	
-	
-=======
+
 	
 3/18/2018
 	
 	Effective C++
 	Active Portfolio Management
+	
+3/19/2018
+	
+	PortMGMT
+	plotly Dash
+	UnitTest
 
->>>>>>> f3dc23a107756241358f091af7692bef3d2484a4
+3/21/2018
+
+	Notes
+	tia
+	Econometrics
+	PortMGMT
+	
