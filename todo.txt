@@ -1,17 +1,22 @@
 Tech to learn
+
 	Python Bloomberg API
 	Sphinx - Python
 	TA-Lib - C++
 	Pyfolio/Zipline - Python
 	QuantLib - Cpp/Python
 	Performance Analytics - R Package
-	JupyterLab
 	BQNT & BQL Documentation
 	Carats library
 	XBRL API
-	py2exe - make standalone python executable for Windows without need for python installation, although I think Web app is better - centrally located and controlled, single access point
+	Angular
+
 
 Workflow Design
+
+	There is a conceptual and an implementation aspect.
+	The conceptual is essentially the steps you would take whether you are programming or not. The implementation is how to do this in a programming environment or otherwise. I'm going to focus on the programming implementation for now since that's how I'm going to use it. It's more complicated, but more powerful.
+	
 	Go through Data sources for start and end date info
 	Standard Descriptive Statistics and Visualizations
 	Design workflow around JupyterLab
@@ -22,17 +27,19 @@ Workflow Design
 	Data Storage Options - Git LFS
 	Use bibtex for LaTex citations
 	Xeus - C++ kernel for JupyterLab
-	JupyterHub
+	JupyterHub - server for running Jupyter notebooks.  
 	JupyterLab Extensions
 	Remember the webapp is the Production step
 
+	Finish Descriptive Statistics Notebook - read "Index Numbers" chapter in book 
+
 Portfolio Management
-	Drift function
-	Remake rebalance function in python
-	Add allocation features to rebalance Script	
+
+	Work on factor allocation methods
 	Look up how Django apps share a backend - can economic data be used in Portfolio Mgmt. can they share a db
-	
-	
+
+
 Market Stress Indicators
+
 	Kansas City Paper - ask if I should dive into this deeper
 	
