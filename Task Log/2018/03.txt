@@ -85,4 +85,36 @@
 	Notes
 	DS Workflow Test
 	
+3/27/2018
+
+	PortMGMT
+	DSWorkflow Test
+	Econometrics
+	Articles
+	Econometrics
+
+3/28/2018
+
+	Econometrics
+	DSWorkflow Test
+	MAchine Learning
 	
+3/29/2018
+
+	Dashboard
+
+4/2/2018
+	
+	Dash
+	PortMGMT
+
+4/3/2018
+
+	Python/Bloomberg Screens
+	Market Stress Testing
+
+4/4
+
+	PortMGMT
+	Econometrics
+	Time Series Analysis
