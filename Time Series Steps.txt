@@ -1,0 +1,21 @@
+Time Series Steps
+
+Univariate:
+	Auto-regression - Test for Stationarity
+		Get correlation coefficients with Autocorrelation Function (acf) or correlogram.
+		Conduct Significance Tests for the autocorrelation coefficients by constructing a non-rejection region for an estimated autocorrelation coefficient to determine whether it is significantly different from zero.
+		Test joint hypothesis that all correlation coefficients are simultaneously equal to zero with the Ljung-Box statistic.
+		Remember: the effect of the significant autocorrelation coefficient is diluted in the joint test by the insignificant coefficients.
+	Moving Average - testing for Heteroscedasticity
+	
+	
+	Partial Autocorrelation Function (pacf)
+		Measure the effects of a lagged variable, while controlling for the effects of the intermediating time steps.
+	
+	ARMA
+		Identification
+			Plot the data over time, the acf and the pacf to determine the order of the model required to capture the dynamic features of the data.
+		Estimation
+			Maximum Likelihood estimation of parameters of the model in the Identification step.
+		Diagnostic Testing
+			

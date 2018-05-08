@@ -113,8 +113,86 @@
 	Python/Bloomberg Screens
 	Market Stress Testing
 
-4/4
+4/4/2018
 
 	PortMGMT
 	Econometrics
 	Time Series Analysis
+
+4/24/2018
+
+	Stress Testing
+	Introductory Econometrics for Finance - chapter 5
+	Information Dashboard Design - chapter 1 & 2
+
+4/25/2018
+
+	Information Dashboard Design - chapter 3 & 4
+	Point-in-Time Historical Data from Bloomberg
+	datacamp
+	Introductory Econometrics for Finance - chapter 5 - finished
+	OpenStack and OpenShift - Cloud Native Computing Foundation
+
+4/26/2018
+
+	Notes
+	datacamp - completed Machine Learning Project
+	Information Dashboard Design - chapter 5
+	
+4/27/2018
+
+	Modern Investment Managment
+	Econometric Workflow
+	Information Dashboard design
+	
+4/30/2018
+
+	Information Dashboard Design: Chap 6
+	datacamp
+	ESG Risk Allocation
+	Introductory Econometrics for Finance
+	Kubernetes
+	Effective C++: Item 37 + 38
+
+5/1/2018
+
+	Information Dashboard Design: Chap 7
+	ESG & Factor Investring Integration
+	DV construction
+	datacamp
+	
+5/2/2018
+
+	Notes
+	Sell Out Script
+	datacamp
+	Kubernetes - Pods
+	Talking Points
+
+5/3/2018
+
+	Information Dashboard Design - finished
+	Talking Points - finished
+	datacamp - finished
+
+5/4/2018
+
+	Introductory Econometric for Finance: Chap 6 VAR
+	
+5/6/2018
+
+	Introductory Econometrics for Finance: Chap 7 Modeling long-run relationships in finance
+		Mostly about cointegration
+
+5/7/2018
+		
+	Kubernetes - Deployments
+	DV data storage
+	Notes
+
+5/8/2018
+
+	DV Data storage
+	
+	
+	

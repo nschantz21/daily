@@ -1,19 +1,21 @@
 Books
 
-* - Done Reading
+* - Finished
 + - currently reading
 
 Econometrics
 	
 	(Maybe) Schaum's Outline of Probability and Statistics, 4th Edition by Spiegal
-	+Schaum's Outline of Statistics and Econometrics
-	Introductory Econometrics for Finance / (Maybe) Econometric Analysis - Greene
+	*Schaum's Outline of Statistics and Econometrics
+	+Introductory Econometrics for Finance / (Maybe) Econometric Analysis - Greene
 	Statistics and Data Analysis for Financial Engineering by Ruppert
 	Time Series Analysis by Hamilton / Analysis of Financial Time Series by Tsay
 	
 Computer Science
 	
 	General:
+		*Information Dashboard Design
+		The Non-Designer's Design Book
 		Design Patterns: Elements of Reusable Object-Oriented Software
 		Pragmatic Programmer
 		Refactoring: Improving the Design of Existing Code
@@ -42,9 +44,11 @@ Computer Science
 	WebDev Etc
 		*Django
 		*Docker Documentation
-		Kubernetes Documentaion
+		+Kubernetes Documentaion
+		Openshift
 		Angular
 		Flask
+		
 	
 	
 Math
@@ -57,7 +61,7 @@ Math
 Financial Analysis
 	
 	Fundamental
-		The Intelligent Investor - Graham
+		+The Intelligent Investor - Graham
 		Options, Futures, and Other Derivatives
 		Security Analysis - Graham
 	
@@ -68,9 +72,11 @@ Financial Analysis
 		The Complete Guide to Capital Markets for Quantitative Professionals
 		Quantitative Value
 		Quantitative Momentum
+		Quantitative Financial Economics
 	
 	Technical Analysis
 		Technical Analysis of the Futures Markets
+		
 	
 	Other
 		*Against the Gods

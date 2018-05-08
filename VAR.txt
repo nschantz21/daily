@@ -1,0 +1,74 @@
+Vector Auto Regression
+	Alternative to large-scale simultaneous equations structural models.
+	VAR assumes all variables on the RHS are known prior to the LHS and results of the LHS cannot affect the RHS - something like that.
+	
+	The model could be extended to encompass moving average errors, which would be a multivariate version of an ARMA model, known as a VARMA.
+	g is tbe number of variables in the model. all variables are considered endogeneous. k is the lag order of the model.
+	
+	The model could be further extended to the case where the model includes first difference terms and cointegrating relationships (a vector error correction model (VECM).
+	
+	For relatively small sample sizes, degrees of freedom will rapidly be used up, implying large standard errors and therefore wide confidence intervals for model coefficients.
+	All components of the VAR should be stationary if you want to use hypothesis tests, either singly or jointly, to examine the statistical significance of the coefficients. However, many proponents of the VAR approach recommend that differencing to induce stationarity should not be done. They would argue that the purpose of VAR estimation is purely to examine the relationships between the variables, and that differencing will throw information on any long-run relationships between the series away.
+	
+	Find optimal lag length with Information Criteria. 
+	In the spirit of VAR, the model should be as unrestricted as possible - a VAR with different lag lengths could be viewed as restricted.
+	
+	For a VAR with 2 variables with 4 lags, there are 16 restrictions: k * g * g
+	An alternative approach to selecting the appropriate VAR lag length would be to use an information criterion, as defined in chapter 5 in the context of ARMA model selection.
+	The univariate criteria could be applied separately to each equation but, again, it is usually deemed preferable to require the number of lags to be the same for each equation.
+	Use MAIC - the values of the information criteria are constructed for 0, 1, . . . , k lags (up to some pre-specified maximum k), and the chosen number of lags is that number minimizing the value of the given information criterion.
+	
+	To model for contemporaneous variables, use the VAR in primitive form, similar to the structural form for a simultaneous equations model.
+	The structural or primitive form VAR, is not identified since identical pre-determined (lagged) variables appear on the RHS of both equations. In order to circumvent this problem, a restriction that one of the coefficients on the contemporaneous terms is zero must be imposed. Essentially you need to pick which contemporaneous variable is informed by the other based on economic/financial theory.
+	
+	Some lagged variables may have coefficients which change sign across the lags, and this, together with the interconnectivity of the equations, could render it difficult to see what effect a given change in a variable would have upon the future values of the variables in the system. In order to partially alleviate this problem, three sets of statistics are usually constructed for an estimated VAR model: block significance tests, impulse responses and variance decompositions.
+	
+	Block Significance Tests:
+		Use granger causality test on lagged variables explaining current variables.
+		Assuming that all of the variables in the VAR are stationary, the joint hypotheses can easily be tested within the F-test framework, since each individual set of restrictions involves parameters drawn from only one equation.
+		Evaluation of the significance of variables in the context of a VAR almost invariably occurs on the basis of joint tests on all of the lags of a particular variable in an equation, rather than by examination of individual coefficient estimates.
+		Use Granger Causality test to determine significance and direction of causality, dependence and independence.
+		
+	Impulse Response:
+		Impulse responses trace out the responsiveness of the dependent variables in the VAR to unit shocks to each of the variables.
+		For each variable from each equation separately, a unit shock is applied to the error, and the effects upon the VAR system over time are noted.
+		Provided that the system is stable, the shock should gradually die away.
+		
+	Variance Decomposition
+		Variance decompositions offer a slightly different method for examining VAR system dynamics. 
+		They give the proportion of the movements in the dependent variables that are due to their 'own' shocks, versus shocks to the other variables.
+		Variance decompositions determine how much of the s-step-ahead forecast error variance of a given variable is explained by innovations to each explanatory variable for s = 1, 2, ...
+		
+	Ordering Variables
+		For calculating impulse responses and variance decompositions, the ordering of the variables is important.
+		Unit shocks used in impulse response assume "all else equal", which is unrealistic since error terms of endogenous variables would probably be correlated. To approach this difficulty, use orthogonalised impulse responses.
+		The whole of the common component of the errors is attributed somewhat arbitrarily to the first variable in the VAR. Such a restriction in effect implies an 'ordering' of variables, so that the equation for y1t would be estimated first and then that of y2t, a bit like a recursive or triangular system.
+		Ideally the ordering should be supported by financial theory, that movements in some variables are likely to follow, rather than precede, others).
+		The sensitivity of the results to changes in the ordering can be observed by assuming one ordering, and then exactly reversing it and re-computing the impulse responses and variance decompositions.
+		The more highly correlated are the residuals from an estimated equation, the more the variable ordering will be important. When uncorrelated, the ordering will make little difference.
+	
+	
+In Practice:
+	
+	Establish Economic Theory and inputs
+	Pick your target and explanatory variables.  Use logarithmic form of values.
+	Exclude any explanatory variables that do not have the appropriate frequency of data, e.g. only annual data for a regression on monthly values.
+	Check for stationarity with Augmented Dickey-Fuller and transform when necessary.
+	
+	Determine the appropriate length. Whichever minimizes the MAIC and use that lag for all variables.  Determine number of variables in each equation and record degrees of freedom.
+	
+	Test significance of all the lags of each of the individual variables jointly with F-Test or Wald Test.
+	F-tests will be able to establish whether all of the lags of a particular variable are jointly significant in a given equation. So you would test all the lag coefficients of each explanatory variable against the target to see if it's statistically significant.
+
+	Use Decomposed Forecast Error Variance to determine the proportion of the movements in the variables that are a consequence of its own shocks rather than shocks to other variables.
+	Check correlation of residuals to determine if order matters. If it matters try the implied order and the reverse of it, to see the sensitivity to order.
+	Determine at what lag length the difference between the variance orders becomes irrelevant.
+	
+	There may be differences between the conclusions of the Granger Causality Test and the Variance Decomposition. The Former is a causality test and the latter is effectively an exogeneity test.
+	If there is not a significant F-test, but explanatory power in the Variance decomposition, then there may be a contemporaneous relationship between the inputs, but no lagged effect.
+	
+	Calculate orthagonalised impulse responses. Two standard error bands are calculated using the Monte Carlo integration approach.
+	
+	
+	
+	
