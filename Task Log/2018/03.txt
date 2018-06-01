@@ -193,6 +193,43 @@
 5/8/2018
 
 	DV Data storage
+	Advanced R: Memory
+	Fundamental data
+	Effective C++: 39
+	Breaking Data Science Open
+	
+5/9/2018
+
+	Notes
+	tia_extra
+	
+5/10/2018
+
+	Notes
+	Advanced R: R's C interface - Finished Book
+	
+	
+5/11/2018
+
+	tia_extra
+	hand on machine learning
+	Effective C++: Item 40
+
+5/13/2018
+
+	Breaking Data Science Open: finished
+	
+5/14/2018
+
+	Linear Algebra with Applications: Chapter 7.1
+	BLPAPI
+	Hands-On Machine Learning: Chap 10
+	
+5/15/2018
+
+	Introductory Econometrics for Finance: Chap 8
+
+
 	
 	
 	

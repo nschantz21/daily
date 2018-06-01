@@ -1,0 +1,12 @@
+Chap 8: Modeling Volatility and correlation
+
+Tests for non-linearity
+	Able to detect a variety of non-linear structures in data, although these tests are unlikely to tell the researcher which type of non-linearity is present.
+
+	RESET test
+	BDS test
+		http://www.statsmodels.org/dev/generated/statsmodels.tsa.stattools.bds.html#statsmodels-tsa-stattools-bds
+	
+Most applications of the above tests conclude that there is non-linear dependence in financial asset returns series, but that the dependence is best characterised by a GARCH-type process.
+Specific tests are unlikely to detect other forms of non-linearities in the data, but their results will by definition offer a class of models that should be relevant for the data at hand.
+

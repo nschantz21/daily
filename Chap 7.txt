@@ -1,0 +1,74 @@
+Modeling Long-Run Relationships
+
+Test for Stationarity
+	Determine what type of non-stationarity:
+		Random Walk with Drift - stochastic non-stationarity, with stochastic trend in the data. Stationarity is induced by 'differencing'.
+			Stationary
+			Unit-Root
+			Explosive
+		Trend Stationary - second case is known as deterministic non-stationarity and de-trending is required
+		
+	The type of non-stationarity will determine how to induce stationarity. Using the wrong one will create undesirable characteristics in both types of series.  Not always obvious which way to proceed. Possible to nest both cases in a more general model, and test that. Most non-stationary financial and economic time series follow stochastic stationary model.
+	
+	So We'll primarily be 'differencing' to induce stationarity.  If a non-stationary series need to be differenced d times to induce stationarity, it is integrated of order d.
+	Applying the difference operator more than d times to an I(d) process will still result in a stationary series (but with an MA error structure).
+	
+	It is not possible to use the acf or pacf to determine whether a series is characterised by a unit root or not.
+	
+	Use Dickey-Fuller and Augmented Dickey-Fuller Test to test for stationarity. 
+	The null hypothesis of a unit root is rejected in favour of the stationary alternative in each case if the test statistic is more negative than the critical value.
+	This will also 'soak up' any dynamic structure present in the depenent variable, to ensure that the stochastic variable is not autocorrelated.
+	You need to determine the optimal number of lags of the dependent variable. 
+		You can use the frequency of the data - e.g. monthly data is lagged 12, quarterly 4
+		Use AIC information Criterion
+	It is quite important to attempt to use an optimal number of lags of the dependent variable in the test regression, and to examine the sensitivity of the outcome of the test to the lag length chosen. Including too few lags will not remove all of the autocorrelation, thus biasing the results, while using too many will increase the coefficient standard errors. Incorrect lag lengths will reduce the power of the test - null of unit root will be rejected less frequently.
+	
+	Testing for higher orders of integration:
+		should start with highest plausible order of integration and work your way down, testing I(N) against I(N-1), but not that importance in finance - nothing usually contains more than a single unit root I(1).
+	
+	
+	Criticisms:
+		The most important criticism that has been leveled at unit root tests is that their power is low if the process is stationary but with a root close to the non-stationary boundary.
+		This means that a failure to reject the null hypothesis could occur either because the null was correct, or because there is insufficient information in the sample to enable rejection.
+		Use confirmatory data analysis to get around this problem.
+		
+		Confirmatory Data Analysis:
+			Use Augmented Dickey-Fuller to test for Unit Root
+			USe KPSS to test for stationarity
+			Compare test results, conclusions and strength of conclusions.
+	
+
+Cointegration
+	
+	If variables with differing orders of integration are combined, the combination will have an order of integration equal to the largest.
+	Cointegration is present when there is a unit root in the variables, but no unit root in the resuiduals.
+	Many time series are non-stationary but 'move together' over time -- that is, there exist some influences on the series (for example, market forces), which imply that the two series are bound by some relationship in the long run.
+	Market forces arising from no-arbitrage conditions suggest that there should be an equilibrium relationship between the series concerned - e.g. PPP, spot/futures, Discounted Dividend Model
+	If a set of series is cointegrated in levels, they will also be cointegrated in log levels.
+	
+	Testing for cointegration:
+		Use DF or ADF to test the residuals of a regression to see whether they are non-stationary or stationary. However, you need to use a different set of test statistics - Engle-Granger, Durbin Watson, Phillips-Perron
+		Cointegrating Regression Durbin Watson (CRDW).
+		
+		If the residuals are stationary, then there is cointegration, and an Error correction model should be used.
+		to see if are multiple cointegrating relationships or whether the 'best' or strongest cointegrating relationship has been found, use Johansen's method as a systems approach to cointegration.
+		
+	Method of parameter estimation:
+		
+		If the data is thought to be non-stationary and possibly cointegrated, use:
+			Engle-Granger - has some problems
+			Johansen - pretty much always use this. Based on VAR
+			
+		Testing for and estimating cointegrating systems using the Johansen technique based on VARs:
+			In order to use the Johansen test, the VAR above needs to be turned into a vector error correction model (VECM).
+			the Johansen test can be affected by the lag length employed in the VECM, and so it is useful to attempt to select the lag length optimally - use same methods as VAR lag selection.
+			The test for cointegration between variables is calculated by looking at the rank of the long-run coefficient matrix via its eignvalues.
+			
+			The Johansen setup does permit the testing of hypotheses about the equilibrium relationships between the variables. 
+			
+
+	If there is no conintegration between segments of a single market, then there is an opportunity for diversification based on that differentiating factor - e.g. Bond markets of different countries are not cointegrated, so you can gain diversification benefits across countries.
+	
+	
+
+	
