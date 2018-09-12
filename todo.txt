@@ -33,6 +33,8 @@ Portfolio Management
 
 
 Economic Indicator Framework
+
+    Find Economic Data Storage
 	
 	Economic Condition Simulator
 		See how portfolios fare under simulated market conditions
@@ -58,8 +60,6 @@ Economic Indicator Framework
 		JupyterHub - server for running Jupyter notebooks.  
 		JupyterLab Extensions
 		Remember the webapp is the Production step
-
-		Finish Descriptive Statistics Notebook - read "Index Numbers" chapter in book 
 		
 Information Dashboard / Web App
 	
